@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Car Parking System">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Huy Le">
+
+  <!-- Title -->
+  <title>Home - Car Parking System</title>
+
+  <!-- Favicons -->
+  <link href="./assets/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap Library -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.3/swiper-bundle.css"
+    integrity="sha512-AWiK+vDErA6h3T2nv7opFSklFsGjQfzZfVmLSz7++023U5hYQQ2/n5mtzt/+OJ6LWxkNkwXzfmvPNCKTEZvaQQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Aos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS -->
+  <link href="./assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="./index.html" class="logo d-flex align-items-center">
+        <img src="./assets/img/logo.png" alt="Logo">
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto">Home</a></li>
+          <li><a href="#about" class="nav-link scrollto">About</a></li>
+          <li><a href="#service" class="nav-link scrollto">Service</a></li>
+          <li><a href="#pricing" class="nav-link scrollto">Pricing</a></li>
+          <li><a href="#contact" class="nav-link scrollto">Contact</a></li>
+          <li><a href="#feedback" class="nav-link scrollto" data-bs-toggle="modal">Feedback</a></li>
+          <li><a href="./dashboard/register.html">Register</a></li>
+          <li><a class="login btn btn-outline-primary" href="./dashboard/login.html">Login</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- Main -->
+  <main id="main">
+
+    <!-- Modal HTML -->
+    <div id="feedback" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <form class="row g-3 needs-validation" novalidate>
+
+            <div class="modal-header">
+              <h5 class="modal-title">Send Us a Message</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="row">
+                <div class="mb-3 col-6">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input id="fullName" type="text" class="form-control" required>
+                  <div class="invalid-feedback">Full Name is not empty.</div>
+                </div>
+                <div class="mb-3 col-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" type="email" class="form-control" required>
+                  <div class="invalid-feedback">Email is not empty.</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="mb-3 col-12">
+                  <label for="comment" class="form-label">Comment</label>
+                  <textarea id="comment" class="form-control" required></textarea>
+                  <div class="invalid-feedback">Comment is not empty.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary">Send Email</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero">
+      <div class="container">
+        <div class="row gy-4 d-flex justify-content-between">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2 data-aos="fade-up">Car Parking System</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non
+              praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum
+              maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
+
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span>200</span>
+                  <p>Slots</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span>6820</span>
+                  <p>Parked</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span>25</span>
+                  <p>Support</p>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span>25</span>
+                  <p>Workers</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="./assets/img/hero/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Hero Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="slides-1 swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="about-item">
+                <img src="./assets/img/member/first-member.jpg" class="about-img" alt="First Member">
+                <h3>Nguyễn Thị Huyền Thương</h3>
+                <h4>Member</h4>
+                <div class="social-links">
+                  <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/huyenthuong.yuki" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="hhttps://www.facebook.com/thuong.nguyenthihuyen.180" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.
+                  Accusantium
+                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="about-item">
+                <img src="./assets/img/member/second-member.jpg" class="about-img" alt="Second Member">
+                <h3>Trần Trung Bá</h3>
+                <h4>Member</h4>
+                <div class="social-links">
+                  <a href="#" target="_blank"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100041896231631" target="_blank"><i
+                      class="bi bi-facebook"></i></a>
+                  <a href="https://www.facebook.com/profile.php?id=100041896231631" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="#"><i class="bi bi-linkedin" target="_blank"></i></a>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="service" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Services</span>
+          <h2>Services</h2>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <div class="card-img">
+                <img src="./assets/img/service/storage-service.jpg" alt="" class="img-fluid">
+              </div>
+              <h3>Storage</h3>
+              <p>Cumque eos in qui numquam. Aut aspernatur perferendis sed atque quia voluptas quisquam repellendus
+                temporibus itaqueofficiis odit</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card">
+              <div class="card-img">
+                <img src="./assets/img/service/logistics-service.jpg" alt="" class="img-fluid">
+              </div>
+              <h3>Logistics</h3>
+              <p>Asperiores provident dolor accusamus pariatur dolore nam id audantium ut et iure incidunt molestiae
+                dolor ipsam ducimus occaecati nisi</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card">
+              <div class="card-img">
+                <img src="./assets/img/service/cargo-service.jpg" alt="" class="img-fluid">
+              </div>
+              <h3>Cargo</h3>
+              <p>Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque
+                oluptatem
+                aut et molestiae ut et nihil</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card">
+              <div class="card-img">
+                <img src="./assets/img/service/trucking-service.jpg" alt="" class="img-fluid">
+              </div>
+              <h3>Trucking</h3>
+              <p>Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque
+                oluptatem
+                aut et molestiae ut et nihil</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="card">
+              <div class="card-img">
+                <img src="./assets/img/service/packaging-service.jpg" alt="" class="img-fluid">
+              </div>
+              <h3>Packaging</h3>
+              <p>Illo consequuntur quisquam delectus praesentium modi dignissimos facere vel cum onsequuntur maiores
+                beatae consequatur magni voluptates</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="card">
+              <div class="card-img">
+                <img src="./assets/img/service/warehousing-service.jpg" alt="" class="img-fluid">
+              </div>
+              <h3>Warehousing</h3>
+              <p>Quas assumenda non occaecati molestiae. In aut earum sed natus eatae in vero. Ab modi quisquam aut
+                nostrum unde et qui est non quo nulla</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Pricing</span>
+          <h2>Pricing</h2>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3 class="text-secondary">Guest</h3>
+              <h4 class="text-secondary"><sup>$</sup>30.000<span> vnd / hour</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
+                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+              </ul>
+              <a href="#" class="buy-btn btn btn-outline-secondary">Buy Now</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item">
+              <h3 class="text-primary">Member Card</h3>
+              <h4><sup>$</sup>25.000<span> vnd / hour</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bi bi-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bi bi-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn btn btn-outline-primary">Buy Now</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3 class="text-warning">Vip Card</h3>
+              <h4 class="text-warning"><sup>$</sup>20.000<span> vnd / hour</span></h4>
+              <ul>
+                <li><i class="bi bi-check"></i> Quam adipiscing vitae proin</li>
+                <li><i class="bi bi-check"></i> Nec feugiat nisl pretium</li>
+                <li><i class="bi bi-check"></i> Nulla at volutpat diam uteera</li>
+                <li><i class="bi bi-check"></i> Pharetra massa massa ultricies</li>
+                <li><i class="bi bi-check"></i> Massa ultricies mi quis hendrerit</li>
+              </ul>
+              <a href="#" class="buy-btn btn btn-outline-warning">Buy Now</a>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Contact</span>
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row gy-4 mt-4">
+
+          <div class="col-lg-3">
+
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Location:</h4>
+                <p>1 Dai Co Viet, Hai Ba Trung, Ha Noi</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>carparkingsystem@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
+              <div>
+                <h4>Call:</h4>
+                <p>(+84)34-8363-589</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-9">
+            <div class="mapouter">
+              <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                  marginheight="0" marginwidth="0" allowfullscreen
+                  src="https://maps.google.com/maps?width=960&amp;height=340&amp;hl=en&amp;q=1 Dai Co Viet, Ha Noi&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                  href="https://embed-googlemap.com">embed google maps</a></div>
+              <style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  width: 100%;
+                  height: 340px;
+                }
+
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  width: 100%;
+                  height: 340px;
+                }
+
+                .gmap_iframe {
+                  height: 340px !important;
+                }
+              </style>
+            </div>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End Main --><!-- End main -->
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+
+    <div class="copyright"></div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- Swiper Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.3/swiper-bundle.min.js"
+    integrity="sha512-xHBRcVjlUJjtDPdyWHU1h7H3/ydeE8NU+hqZg9eoP0DpIrc5iyxV1oRBrgp2FqFYJodZyHSAtWt5GDu2RUdSfQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Aos Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

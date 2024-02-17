@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required Tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Car Parking System">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Huy Le">
+
+  <!-- Title -->
+  <title>Manager / Slot - Car Parking System</title>
+
+  <!-- Favicons -->
+  <link href="./assets/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Bootstrap Library -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <!-- Simple Datatable CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" type="text/css">
+
+  <!-- Main CSS -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="./dashboard.html" class="logo d-flex align-items-center justify-content-center">
+        <img src="assets/img/logo.png" alt="Logo">
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle" href="#"><i class="bi bi-search"></i></a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header"><a class="px-5 mx-3" href="#">Show all notifications</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+            <span class="badge bg-success badge-number">3</span>
+          </a><!-- End Messages Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
+            <li class="dropdown-header"><a class="px-5 mx-4" href="#">Show all messages</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Maria Hudson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>Anna Nelson</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>6 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="message-item">
+              <a href="#">
+                <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
+                <div>
+                  <h4>David Muldon</h4>
+                  <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
+                  <p>8 hrs. ago</p>
+                </div>
+              </a>
+            </li>
+
+          </ul><!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img alt="Profile" id="brief-profile-img" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2" id="brief-profile-name"></span>
+          </a><!-- End Profile Image Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+
+            <li>
+              <a class="dropdown-item" href="./my-profile.html"><i class="bi bi-person"></i>My Profile</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="./need-help.html"><i class="bi bi-question-circle"></i>Need Help?</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item text-danger" id="logout" href="./login.html"><i
+                  class="bi bi-box-arrow-right"></i>Logout</a>
+            </li>
+
+          </ul><!-- End Profile Dropdown Items -->
+
+        </li><!-- End Profile Nav -->
+
+      </ul>
+
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- Aside -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="./dashboard.html"><i class="bi bi-grid"></i>Dashboard</a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#manager-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-speedometer2"></i>Manager<i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="manager-nav" class="nav-content collapse" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="./manager-parking.html"><i class="bi bi-circle"></i>Parking</a>
+          </li>
+          <li>
+            <a href="./manager-user.html"><i class="bi bi-circle"></i>User</a>
+          </li>
+          <li>
+            <a href="./manager-card.html"><i class="bi bi-circle"></i>Card</a>
+          </li>
+          <li>
+            <a href="./manager-payment.html"><i class="bi bi-circle"></i>Payment</a>
+          </li>
+          <li>
+            <a href="./manager-transaction.html"><i class="bi bi-circle"></i>Transaction</a>
+          </li>
+          <li>
+            <a href="./manager-price.html"><i class="bi bi-circle"></i>Price</a>
+          </li>
+          <li>
+            <a href="./manager-slot.html"><i class="bi bi-circle"></i>Slot</a>
+          </li>
+        </ul>
+      </li><!-- End Manager Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="./contact.html"><i class="bi bi-envelope"></i>Contact</a>
+      </li><!-- End Contact Page Nav -->
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <!-- Main -->
+  <main id="main" class="main">
+
+    <div class="page-title">
+      <h1>Slot</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="./dashboard.html">Home</a></li>
+          <li class="breadcrumb-item">Manager</li>
+          <li class="breadcrumb-item active">Slot</li>
+        </ol>
+      </nav>
+
+    </div><!-- End Page Title -->
+
+    <div id="detailModal" class="modal fade" tabindex="-1" data-bs-backdrop="false">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+          <form class="row needs-validation p-2" novalidate>
+
+            <div class="modal-header">
+              <h5 class="modal-title">Slot Detail</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="detailModal-station" class="form-label">Station</label>
+                    <input id="detailModal-station" type="text" class="form-control" readonly disabled>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="detailModal-position" class="form-label">Position</label>
+                    <input id="detailModal-position" type="text" class="form-control" readonly disabled>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <label for="detailModal-status" class="form-label">Is Full</label>
+                  <div class="input-group mb-3">
+                    <select type="select" class="form-select" id="detailModal-status" required>
+                      <option id="detailModal-emptyStatus" value="false" class="text-success">Empty</option>
+                      <option id="detailModal-fullStatus" value="true" class="text-danger">Full</option>
+                    </select>
+                    <div class="invalid-feedback">Status is not empty.</div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="detailModal-description" class="form-label">Description</label>
+                    <input id="detailModal-description" type="text" class="form-control">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="detailModal-createdAt" class="form-label">Created At</label>
+                    <input id="detailModal-createdAt" type="text" class="form-control" readonly disabled>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3">
+                    <label for="detailModal-updatedAt" class="form-label">Updated At</label>
+                    <input id="detailModal-updatedAt" type="text" class="form-control" readonly disabled>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+              <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div><!-- End Detail Card Modal -->
+
+    <div id="deleteModal" class="modal fade" tabindex="-1" data-bs-backdrop="false">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title text-danger">Message</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <p>Are you sure delete this slot?</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" id="deleteModal-confirm" class="btn btn-danger">Confirm</button>
+          </div>
+
+        </div>
+      </div>
+    </div><!-- End Delete Parking Modal -->
+
+    <section class="section">
+
+      <div class="card-body">
+
+        <button id="print" class="btn btn-sm btn-outline-primary"><i class="bi bi-printer"></i> Print</button>
+
+        <table id="table" class="table table-hover table-striped table-borderless"></table>
+
+      </div>
+
+    </section><!-- End Table Section -->
+
+  </main><!-- End Main -->
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+
+    <div class="copyright"></div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- Apexcharts -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+  <!-- Simple Datatable -->
+  <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
+
+  <!-- Axios -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <!-- Main JS -->
+  <script src="./assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+
+      const accessToken = `Bearer ${localStorage.getItem("accessToken")}`;
+
+      try {
+        const myUser = await axios.get("http://localhost:3000/api/user/get-by-id", {
+          headers: {
+            'Authorization': accessToken
+          }
+        });
+        if (myUser.status === 200) {
+          document.querySelector('#brief-profile-name').innerHTML = myUser.data.data.user.fullName;
+          document.querySelector('#brief-profile-img').setAttribute('src', myUser.data.data.user.avatar);
+        }
+
+        const slots = await axios.get("http://localhost:3000/api/slot/get-all?limit=0", {
+          headers: {
+            'Authorization': accessToken
+          }
+        });
+        if (slots.status === 200) {
+          renderTable(slots.data.data.slots);
+
+          document.querySelectorAll('#detail').forEach(elm => {
+            elm.addEventListener("click", async (event) => {
+              event.preventDefault();
+
+              const slot = await axios.get(elm.getAttribute('href'), {
+                headers: {
+                  'Authorization': accessToken
+                }
+              });
+              if (slot.status === 200) {
+                document.querySelector('#detailModal-station').setAttribute('value', slot.data.data.slot.station);
+                document.querySelector('#detailModal-position').setAttribute('value', slot.data.data.slot.position);
+                document.querySelector('#detailModal-description').setAttribute('value', slot.data.data.slot.description);
+                const status = slot.data.data.slot.isFull;
+                if (status === true) {
+                  document.querySelector('#detailModal-emptyStatus').removeAttribute('selected');
+                  document.querySelector('#detailModal-fullStatus').setAttribute('selected', '');
+                } else if (status === false) {
+                  document.querySelector('#detailModal-fullStatus').removeAttribute('selected');
+                  document.querySelector('#detailModal-emptyStatus').setAttribute('selected', '');
+                }
+                document.querySelector('#detailModal-createdAt').setAttribute('value', convertUTCDatetimeToLocalDatetime(slot.data.data.slot.createdAt));
+                document.querySelector('#detailModal-updatedAt').setAttribute('value', convertUTCDatetimeToLocalDatetime(slot.data.data.slot.updatedAt));
+
+                new bootstrap.Modal(document.querySelector("#detailModal")).show();
+
+                document.querySelector('#detailModal').addEventListener('submit', async (event) => {
+                  event.preventDefault();
+
+                  const newSlot = await axios.put(`http://localhost:3000/api/slot/update/${slot.data.data.slot.id}`, {
+                    isFull: document.querySelector('#detailModal-status').value === 'true' ? true : false,
+                    description: document.querySelector('#detailModal-description').value,
+                  }, {
+                    headers: {
+                      'Authorization': accessToken
+                    }
+                  });
+                  if (newSlot.status === 200) {
+                    window.location.reload();
+                  }
+                })
+              }
+            })
+          });
+
+          document.querySelectorAll('#delete').forEach(elm => {
+            elm.addEventListener("click", async (event) => {
+              event.preventDefault();
+
+              new bootstrap.Modal(document.querySelector("#deleteModal")).show();
+
+              document.querySelector('#deleteModal-confirm').addEventListener('click', async (event) => {
+                event.preventDefault();
+
+                const slot = await axios.delete(elm.getAttribute('href'), {
+                  headers: {
+                    'Authorization': accessToken
+                  }
+                })
+
+                if (slot.status === 200) {
+                  window.location.reload();
+                }
+              })
+            })
+          });
+        }
+
+        document.querySelector("#logout").addEventListener("click", async (event) => {
+          event.preventDefault();
+
+          await axios.get("http://localhost:3000/api/auth/logout", {
+            headers: {
+              'Authorization': accessToken
+            }
+          })
+
+          localStorage.clear();
+
+          window.location.replace('./login.html');
+        });
+      } catch (error) {
+        if (error.response.status === 500) {
+          window.location.href = "./error-500.html";
+        } else if (error.response.status === 401) {
+          window.location.href = "./error-401.html";
+        } else if (error.response.status === 404) {
+          window.location.href = "./error-404.html";
+        }
+      }
+    })
+
+    function renderTable(datas) {
+      let count = 1;
+      let tableContent = `
+        <thead>
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Station</th>
+            <th scope="col">Position</th>
+            <th scope="col">Status</th>
+            <th scope="col">Updated At</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>`;
+
+      datas.forEach(data => {
+        tableContent += `
+          <tr>
+            <td>${count++}</td>
+            <td>${data.station}</td>
+            <td>${data.position}</td>
+            <td><span class="badge ${(() => {
+            if (data.isFull === false) {
+              return 'bg-success';
+            } else if (data.isFull === true) {
+              return 'bg-danger';
+            }
+          })()}">${(() => {
+            if (data.isFull === false) {
+              return 'Empty';
+            } else if (data.isFull === true) {
+              return 'Full';
+            }
+          })()}</span></td>
+          <td>${convertUTCDatetimeToLocalDatetime(data.updatedAt)}</td>
+            <td><a href="http://localhost:3000/api/slot/get-by-id/${data.id}" data-bs-toggle="tooltip" data-bs-placement="top" title="Detail" id="detail" class="me-3"><i
+                  class="bi bi-pencil text-info"></i></a><a href="http://localhost:3000/api/slot/delete/${data.id}" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Delete" id="delete"><i class="bi bi-trash text-danger"></i></a>
+            </td>
+          </tr>`;
+      });
+
+      tableContent += `
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Station</th>
+            <th scope="col">Position</th>
+            <th scope="col">Status</th>
+            <th scope="col">Updated At</th>
+            <th scope="col">Action</th>
+          </tr>
+        </tfoot>`;
+
+      const table = document.querySelector('#table');
+      table.innerHTML = tableContent;
+      const dataTable = new simpleDatatables.DataTable(table);
+
+      document.querySelector('#print').addEventListener("click", async (event) => {
+        event.preventDefault();
+
+        dataTable.print();
+      });
+    }
+  </script>
+
+</body>
+
+</html>
